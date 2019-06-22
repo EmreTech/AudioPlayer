@@ -11,6 +11,6 @@ In order to run this program, you need to download WAV music file(s) on your com
 5. Click Play. Now your muaic should be playing.
 
 How to change the volume:
-To change the volume, you have to put in a value in the volume text box. Put the value between 0 - 2. It can be a decmial or a whole number but only up to 2.
+To change the volume, you have to put in a value in the volume text box. You can also set the slider as the volume. However, it doesn't work too well. Put the value between 0 - 2. It can be a decmial or a whole number but only up to 2.
 
 Enjoy this program and give me feedback!
