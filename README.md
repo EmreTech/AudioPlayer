@@ -6,7 +6,7 @@ In order to run this program, you need to download WAV music file(s) on your com
 
 1. Make sure you have Java installed. Search up how to install java for your OS for details.
 2. Open Command Prompt/Terminal and make sure it is in the directory of where you downloaded this project.
-3. Type java -jar Window.jar. It should open a window which it's name is Audio Player Prototype.
+3. Type java -jar AudioPlayer1.jar. It should open a window which it's name is Audio Player Prototype.
 4. Open File Explorer/Finder on your computer. Go to where you downloaded this project, and go into the res folder. Get the name of your WAV music file(s) and go back into the Audio Player. Type the name of one WAV music file (without the .WAV part) and click send or hit enter.
 5. Click Play. Now your muaic should be playing.
 
