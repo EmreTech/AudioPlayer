@@ -63,6 +63,10 @@ public class Music {
 	    gainControl.setValue(20f * (float) Math.log10(volume));
 	}
 	
+	public Float getVolume() {
+		Float volume = ((FloatControl) clip.getControl(FloatControl.Type.VOLUME)).getValue();
+		return volume;
+	}
 	public boolean isPlaying() {
 		return playing;
 	}
