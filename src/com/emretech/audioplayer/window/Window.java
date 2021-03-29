@@ -215,7 +215,7 @@ public class Window {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					Desktop desktop = java.awt.Desktop.getDesktop();
-					URI oURL = new URI("https://discord.gg/H5NpyHW");
+					URI oURL = new URI("https://discordapp.com");
 					desktop.browse(oURL);
 				} catch (Exception e1) {
 					e1.printStackTrace();
@@ -252,44 +252,6 @@ public class Window {
 		slider.setMaximum(205);
 		slider.setBounds(192, 201, 190, 29);
 		frame.getContentPane().add(slider);
-		
-		btnGetMyEmail = new JButton("Get my Email");
-		btnGetMyEmail.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				Desktop desktop = java.awt.Desktop.getDesktop();
-				URI gmail = null;
-				URI yahoo = null;
-				try {
-					gmail = new URI("https://www.gmail.com");
-					yahoo = new URI("https://login.yahoo.com/?.src=ym&.lang=en-US&.intl=us&.done=https%3A%2F%2Fmail.yahoo.com%2Fd");
-				} catch (URISyntaxException ex) {
-					ex.printStackTrace();
-				}
-				
-				
-				int DialogAnswer = JOptionPane.showConfirmDialog(null, "If you click Yes, you agree to not spam me with spam emails.", "Warning", JOptionPane.YES_NO_OPTION);
-				if (DialogAnswer == JOptionPane.YES_OPTION) {
-					String test = JOptionPane.showInputDialog(null, "Emre's Email is emreterzioglu49@gmail.com. Enter your email provider here:");
-					test = test.toLowerCase();
-					try {
-						switch (test) {
-						case "gmail":
-							desktop.browse(gmail);
-							break;
-						case "yahoo":
-							desktop.browse(yahoo);
-							break;
-						}
-					} catch (IOException exx) {
-						exx.printStackTrace();
-					}
-				}
-				else
-					return;
-			}
-		});
-		btnGetMyEmail.setBounds(212, 294, 117, 29);
-		frame.getContentPane().add(btnGetMyEmail);
 
 		frame.setLocationRelativeTo(null);
 		frame.setSize(515, 376);
